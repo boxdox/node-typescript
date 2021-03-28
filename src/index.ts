@@ -1,7 +1,7 @@
-import { load } from 'ts-dotenv'
+import { loadEnv, env } from './env'
 
-const env = load({
-  TEXT: String,
-})
+// load the env vars
+loadEnv()
 
+// eslint-disable-next-line no-console
 console.log(env.TEXT)
